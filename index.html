@@ -5,27 +5,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="/src/stylesheets/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Fylo data storage component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
-  You’ve used 815 GB of your storage
+  <div class="wrapper">
+    <div class="menu">
+      <span class="title">
+        <img src="/images/logo.svg" alt="Logo" class="logo">
+      </span>
+      <div class="menu-icons">
+        <div class="icon">
+          <img src="/images/icon-document.svg" alt="">
+        </div>
+        <div class="icon">
+          <img src="/images/icon-folder.svg" alt="">
+        </div>
+        <div class="icon">
+          <img src="/images/icon-upload.svg" alt="">
+        </div>
+      </div>
+    </div>
 
-  185 GB Left
+    <div class="storage">
+      <span class="text">
+        You’ve used <b>815 GB</b> of your storage
+      </span>
+
+      <div class="line">
+        <div class="gradient">
+          <div class="point"></div>
+        </div>
+      </div>
+    
+      <div class="quote">
+        <span class="number">185</span> GB Left
+      </div>
+    
+      <div class="sizes">
+        <span>
+          0 GB
+        </span>
+        <span>
+          1000 GB
+        </span>
+      </div>
+    
+    </div>
   
-  0 GB
-  1000 GB
+
+  </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Caroline Avellar</a>.
   </div>
 </body>
 </html>
